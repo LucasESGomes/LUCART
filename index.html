@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Lucart - Home page</title>
 </head>
-<body>  
+<body style="overflow-x: hidden;">  
     <!-------------------Header - Home page------------------->
     <header>
 
@@ -43,6 +43,57 @@
 
     <!--Principal do site (meio)-->
     <main>
+
+        <!--Slider de imagens-->
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+               <div id="overflow">
+                  <div class="inner">
+                     <div class="slide slide_1">
+                        <div class="slide-content">
+                           <img src="img/rolex-green.png">
+                        </div>
+                     </div>
+                     <div class="slide slide_2">
+                        <div class="slide-content">
+                           <img src="img/rolex-blue.webp" width="100%"> 
+                        </div>
+                     </div>
+                     <div class="slide slide_3">
+                        <div class="slide-content">
+                            <img src="img/pattek-preto.webp" width="40%">
+                        </div>
+                     </div>
+                     <div class="slide slide_4">
+                        <div class="slide-content">
+                            <img src="img/omega-red.avif" width="90%">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="controls">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+            </div>
+         </div>
+
+
+
+
+
         
         <div class="div-text-main">
             <p class="text-main">Recomendados para você</p>
@@ -75,7 +126,8 @@
                 <p class="inf-product">G-SHOCK GMW-B5000D-3</p>
                 <p class="inf-product">Preço da loja online</p>
                 <p class="value-product">R$: 450,00</p>
-                <button class="">Comprar</button>   
+                <a href="product.html"><button>Comprar</button></a>
+                   
             </div>
         </div>
     </main>
