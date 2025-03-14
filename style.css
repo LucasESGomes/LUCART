@@ -256,81 +256,79 @@ a button {
 
  /*--------------|Main - product|-------------- */
  .container-product {
-    display: flex;
-    background-color: white;
-    max-width: 750px;
-    margin: 20px auto;
-    padding: 20px;
-}
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-align: center;
-}
-.product {
-    display: flex;
-    margin-top: 20px;
-    justify-items: center;
-}
-.image-placeholder {
-    width: 300px;
-    height: 300px;
-    background-color: #ccc;
-}
-.details {
-    margin-left: 20px;
-}
-.price {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-.shipping {
-    margin-top: 10px;
-}
-.input-container {
-    display: flex;
-    align-items: center;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius : 5px;
-    overflow: hidden;
-    width: 100%;
-    max-width: 250px;
-}
-.input-container input {
-    border: none;
-    padding: 8px;
-    flex: 1;
-    outline: none;
-}
-.input-container button {
-    border: none;
-    background-color: rgb(224, 223, 223);
-    color: rgb(19, 17, 17);
-    padding: 8px 12px;
-    cursor: pointer;
-}
-.buy-btn {
+    margin: 100px;
     display: flex;
     justify-content: center;
-    background-color: black;
-    color: white;
-    width: 300px;
-    height: 50px;
-    align-items: center;
-    margin-top: 20px;
-    text-decoration: none;
-}
-.footer a {
-    margin: 0 10px;
-    color: rgb(59, 5, 5);
-    text-decoration: none;
-}
-.centralizacao {
+     
+ }
+
+ .image-product {
+    width: fit-content;
+    padding-right: 6%;
+ }
+
+ .back-image {
+    display: flex;
+    justify-content: center;
+    background: rgb(148,195,156);
+    background: radial-gradient(circle, rgba(148,195,156,1) 3%, rgba(44,75,48,1) 100%);
+    width: 800px;
+ }
+
+ .information-product {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding-bottom: 20px;
+ }
+
+ #buy-btn {
     width: 600px;
-    margin: 0 auto;
-}
+ }
+
+ #text-inf-product {
+    position: relative;
+    top: 20%;
+ }
+
+ #price-product {
+    position: relative;
+    top: 22%;
+ }
+
+ #calculate {
+    position: relative;
+    top: 59%;
+ }
+
+ .calculate-input {
+    display: flex;
+    align-items: center;
+    gap: 45%;
+    position: relative;
+    top: 60%;
+    width: 600px;
+    border: 1px solid var(--preto);
+ }
+
+ .calculate-input input {
+    outline: none;
+    border: transparent;
+    margin-left: 5%;
+ }
+
+ #calculate-btn {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 90px;
+    height: 80%;
+ }
+
+ #buy-btn {
+    position: relative;
+    top: 67.3%;
+ }
 
 
 
