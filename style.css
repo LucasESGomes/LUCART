@@ -279,7 +279,7 @@ a button {
     display: flex;
     align-items: baseline;
     flex-direction: column;
-    padding-bottom: 20px;
+    padding-bottom: 138px;
  }
 
  #buy-btn {
@@ -289,16 +289,20 @@ a button {
  #text-inf-product {
     position: relative;
     top: 20%;
+    font-size: 20px;
+    color: var(--cinza-escuro);
  }
 
  #price-product {
     position: relative;
-    top: 22%;
+    top: 20%;
+    font-size: 40px;
+    font-weight: bold;
  }
 
  #calculate {
     position: relative;
-    top: 59%;
+    top: 63%;
  }
 
  .calculate-input {
@@ -306,7 +310,7 @@ a button {
     align-items: center;
     gap: 45%;
     position: relative;
-    top: 60%;
+    top: 65%;
     width: 600px;
     border: 1px solid var(--preto);
  }
@@ -318,19 +322,21 @@ a button {
  }
 
  #calculate-btn {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    width: 90px;
-    height: 80%;
+    
  }
 
  #buy-btn {
     position: relative;
-    top: 67.3%;
+    top: 65.95%;
  }
 
+ #name-product {
+    font-size: 40px;
+ }
 
+#last-p {
+    font-size: 25px;
+}
 
 
 
@@ -370,7 +376,22 @@ button {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.3s ease;
 }
+
+button:hover {
+    transition: 0.3s ease;
+    background-color: #1d1d1d;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
+    
+}
+
+
+
 #resultado {
     text-align: center;
     margin-top: 15px;
