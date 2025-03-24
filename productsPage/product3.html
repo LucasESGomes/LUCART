@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Lucart - Table page</title>
+</head>
+<body>  
+    <!-------------------Header - Home page------------------->
+    <header>
+
+        <!--Links para aessar as outras páginas-->
+        <nav class="nav-links">
+            <div class="top-header">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a class="nav-a" href="index.html">Inicio</a></li>
+                    <li class="nav-li"><a class="nav-a" href="table.html">Informações</a></li>
+                    <li class="nav-li"><a class="nav-a" href="">Sobre a Lucart</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="bottom-header">
+            
+            <!--Barra de busca no cabeçalio-->
+            <div class="search-bar">
+                <input type="text" placeholder="Digite para pesquisar">
+                <i class='bx bx-search-alt-2' ></i>
+            </div>
+
+            <p class="header-p"><a class="p-a" href="index.html">LUCART</a></p>
+
+            <!--Carrosel que irá passar as imagens do site-->
+            <div class="carrousel">
+                <p></p>
+            </div>
+
+        </div>
+    </header>
+
+    <!--Principal do site (meio)-->
+    <main>
+
+        <!--Produto para o usuário comprar-->
+        <div class="container-product">
+            <div class="image-product">
+                 <div class="back-image">
+                    <img src="img/seiko-watch-blue.png" width="600px">
+                 </div>
+                <p id="last-p">Informações do produto</p>
+            </div>
+            <div class="information-product">
+                <p id="name-product">Grand Seiko - Sport Spring Drive</p>
+                <p id="text-inf-product">A partir de $:</p>
+                <p class="value-product">250.00</p> <!-- Valor do produto -->
+                <p class="valor-dolar"></p> <!-- Valor convertido será exibido aqui -->
+                <p id="calculate">Calcule o frete:</p>
+                <div class="calculate-input">
+                    <input type="text" placeholder="Digite seu CEP:">
+                    <button id="calculate-btn">Calcular</button>
+                </div>
+                <button id="buy-btn">Comprar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!--Rodapé do site (fim)-->
+    <footer>
+
+        <!--Counteúdo do footer-->
+        <div class="grey-footer">
+            <div class="inf-footer">
+                <p>Guia de Loja Online</p>
+                <a href="">Termos e Condições de Compra</a>
+                <div class="img-footer">
+                    <img src="img/face-black.webp">
+                    <img src="img/insta-black.webp">
+                    <img src="img/you-black.webp">
+                </div>
+            </div>
+
+            <div class="inf-footer">
+                <p>Suporte ao Cliente</p>
+                <a href="">Suporte</a>
+                <a href="">Canal de atendimento</a>
+                <a href="">Área do Cliente</a>
+            </div>
+
+            <div class="inf-footer">
+                <p>Sobre nós</p>
+                <a href="">Sobre a LUCART</a>
+                <a href="">Informações</a>
+                <a href="">Sustentabilidade</a>
+            </div>
+        </div>
+
+        <!--Direitos do site-->
+        <div class="black-footer">
+            <p>&copy;Todos os direitos reservados LUCART</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -291,9 +291,18 @@ a button {
     top: 20%;
     font-size: 20px;
     color: var(--cinza-escuro);
+    text-decoration: line-through;
  }
 
- #price-product {
+ .value-product {
+    position: relative;
+    font-size: 20px;
+    top: 20%;
+    color: var(--cinza-escuro);
+    text-decoration: line-through;
+ }
+
+ .information-product .valor-dolar {
     position: relative;
     top: 20%;
     font-size: 40px;
@@ -302,7 +311,7 @@ a button {
 
  #calculate {
     position: relative;
-    top: 63%;
+    top: 45%;
  }
 
  .calculate-input {
@@ -310,7 +319,7 @@ a button {
     align-items: center;
     gap: 45%;
     position: relative;
-    top: 65%;
+    top: 46%;
     width: 600px;
     border: 1px solid var(--preto);
  }
@@ -327,7 +336,7 @@ a button {
 
  #buy-btn {
     position: relative;
-    top: 65.95%;
+    top: 47.65%;
  }
 
  #name-product {
@@ -510,3 +519,127 @@ footer {
        margin: 0 auto;
     }
  }
+
+ /* Menu Hamburger */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--cinza);
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-ul.active {
+        display: flex;
+    }
+
+    .nav-li {
+        margin: 10px 0;
+    }
+
+    .top-header {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .bottom-header {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+        height: auto;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .header-p {
+        font-size: 40px;
+    }
+
+    #slides .inner {
+        height: 300px;
+    }
+
+    .div-text-main {
+        left: 0;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .product-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product {
+        margin-left: 0;
+    }
+
+    .product img {
+        width: 100%;
+    }
+
+    a button {
+        width: 100%;
+    }
+
+    .container-product {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .image-product {
+        padding-right: 0;
+    }
+
+    .back-image {
+        width: 100%;
+    }
+
+    .information-product {
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    #buy-btn, .calculate-input {
+        width: 100%;
+    }
+
+    .calculate-input {
+        gap: 10px;
+    }
+
+    .grey-footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .inf-footer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .img-footer {
+        justify-content: center;
+    }
+}
