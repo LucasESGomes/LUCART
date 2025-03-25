@@ -43,7 +43,7 @@ function atualizarValorConvertido(container, valorAtual) {
     }).format(valorConvertido);
 
     // Atualizar o elemento que exibe o valor convertido
-    container.querySelector('.valor-dolar').innerHTML = `Valor convertido para real: ${valorFormatado}`;
+    container.querySelector('.valor-dolar').innerHTML = `Valor convertido dolar para real: ${valorFormatado}`;
 }
 // Atualizar a cada segundo
 setInterval(refresh, 1000);
@@ -54,25 +54,25 @@ setInterval(refresh, 1000);
 
 //Código da API - CEP (calcular frete)
 // 1. Adicione estas funções (novas)
-function showPopup(content) {
-    const popupOverlay = document.getElementById('popupOverlay');
-    const popupContent = document.getElementById('popupContent');
-    popupContent.innerHTML = content;
-    popupOverlay.classList.add('active');
-}
-
-function hidePopup() {
-    document.getElementById('popupOverlay').classList.remove('active');
-}
-
-// 2. Modifique APENAS a função consultarFrete() (substitua pela versão abaixo)
-function consultarFrete() {
-    const cep = document.getElementById('cep').value;
-    
-    if (!cep || cep.length !== 8) {
-        showPopup('Por favor, insira um CEP válido!');
-        return;
+    function showPopup(content) {
+        const popupOverlay = document.getElementById('popupOverlay');
+        const popupContent = document.getElementById('popupContent');
+        popupContent.innerHTML = content;
+        popupOverlay.classList.add('active');
     }
+
+    function hidePopup() {
+        document.getElementById('popupOverlay').classList.remove('active');
+    }
+
+    // 2. Modifique APENAS a função consultarFrete() (substitua pela versão abaixo)
+    function consultarFrete() {
+        const cep = document.getElementById('cep').value;
+        
+        if (!cep || cep.length !== 8) {
+            showPopup('Por favor, insira um CEP válido!');
+            return;
+        }
     
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
         .then(response => response.json())
